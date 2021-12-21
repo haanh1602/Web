@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="Tabs.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-bar-container">
+        <div class="top-bar home">
+            <div class="top-bar-left">
+                <div class="top-bar-left top-bar-logo">
+                    <div>LOGO</div>
+                </div>
+                <div class="top-bar-left top-bar-btn">
+                    <div>TRANG CHỦ</div>
+                </div>
+                <div class="top-bar-left top-bar-btn">
+                    <div>HỖ TRỢ</div>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <button class="top-bar-right account-btn">
+                    <div>TÀI KHOẢN</div>
+                    <div class="crowdown-img">v</div>
+                </button>
+            </div>
+        </div>
+    <div class="app-content-container">
+        <div class="nav-tabs">
+            <div id="khai-bao-cap-ma" class="tab1 tab-container">
+                <div class="tab">
+                    <p>KHAI BÁO & CẤP MÃ</p>
+                </div>
+            </div>
+            <div id="nhap-lieu" class="tab2 tab-container">
+                <div class="tab">
+                    <p>NHẬP LIỆU</p>
+                </div>
+            </div>
+            <div id="tien-do" class="tab3 tab-container">
+                <div class="tab">
+                    <p>TIẾN ĐỘ</p>
+                </div>
+            </div>
+            <div id="quan-ly-du-lieu" class="tab4 tab-container">
+                <div class="tab">
+                    <p>QUẢN LÝ DỮ LIỆU</p>
+                </div>
+            </div>
+            <div id="tao-tai-khoan-cap-duoi" class="tab5 tab-container">
+                <div class="tab">
+                    <p>TẠO TÀI KHOẢN CẤP DƯỚI</p>
+                </div>
+            </div>
+            <div id="quan-ly-tai-khoan" class="tab6 tab-container">
+                <div class="tab">
+                    <p>QUẢN LÝ TÀI KHOẢN</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content-container">
+            <div id="kbcm" class="tab-content">
+                <div class="tab-title" style="margin-top:30px;">KHAI BÁO VÀ CẤP MÃ</div>
+                <form>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">Chọn tỉnh/thành phố*:</lable>
+                        <div class="part">
+                            <input type="button" value="-Tỉnh/Thành phố-" id="kbcm-tinh-thanh-pho" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">Chọn quận/huyện:</lable>
+                        <div class="part">
+                            <input type="button" value="-Quận/Huyện-" id="kbcm-quan-huyen" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">Chọn phường/xã:</lable>
+                        <div class="part">
+                            <input type="button" value="-Phường/Xã-" id="kbcm-phuong-xa" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">Chọn thôn/bản/tổ dân phố:</lable>
+                        <div class="part">
+                            <input type="button" value="-Thôn/Bản/Tổ dân phố-" id="kbcm-thon-ban-to-dan-pho" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">Cấp mã</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Mã" id="kbcm-cap-ma" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <div class="part"></div>
+                        <div class="part item-center">
+                            <input type="submit" value="Xác nhận" id="kbcm-submit-btn" class="tab-content-submit-btn">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                </form>
+            </div>
+            <div id="nl" class="tab-content">
+                <form>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Số CCCD/CMND:</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập số CCCD/CMND..." id="nl-cccd-cmnd" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Họ và tên:</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập họ và tên..." id="nl-ho-va-ten" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Giới tính:</lable>
+                        <div class="part">
+                            <input type="button" value="Giới tính" id="nl-gioi-tinh" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Quê quán:</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập quê quán..." id="nl-que-quan" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Địa chỉ thường trú:</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập địa chỉ thường trú..." id="nl-dia-chi-thuong-tru" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Địa chỉ tạm trú:</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập địa chỉ tạm trú..." id="nl-dia-chi-tam-tru" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Tôn giáo:</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập tôn giáo..." id="nl-ton-giao" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Trình độ văn hóa:</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập trình độ văn hóa..." id="nl-trinh-do-van-hoa" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <lable class="input-field part bold-text">Nghề nghiệp:</lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập nghề nghiệp..." id="nl-nghe-nghiep" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-60">
+                        <div class="part"></div>
+                        <div class="part item-center">
+                            <input type="submit" value="Nhập" id="nl-submit-btn" class="tab-content-submit-btn">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                </form>
+            </div>
+            <div id="td" class="tab-content">
+                <div class="td-container">
+                    <div class="tab-content-option-container">
+                        <button class="tab-content-option-btn">
+                            Xem tiến độ
+                        </button>
+                    </div>
+                    <div class="tab-content-option-container">
+                        <button class="tab-content-option-btn">
+                            Báo cáo tình hình điều tra dân số
+                        </button>
+                    </div>
+                    <div class="tab-content-option-container"></div>
+                </div>
+            </div>
+            <div id="td-bao-cao-trinh-trang" class="tab-content">
+                <div class="tab-title margin-top-30">BÁO CÁO TÌNH TRẠNG ĐIỀU TRA DÂN SỐ</div>
+                <form>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Chọn tỉnh/thành phố*:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="button" value="-Tỉnh/Thành phố-" id="td-bao-cao-tinh-thanh-pho" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Chọn quận/huyện:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="button" value="-Quận/Huyện-" id="td-bao-cao-quan-huyen" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Chọn phường/xã:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="button" value="-Phường/Xã-" id="td-bao-cao-phuong-xa" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Tình trạng điều tra:</p>
+                        </lable>
+                        <div class="part">
+                            <div style="flex: 1">
+                                <label style="font-size: 19px; display: flex; align-items: center;">
+                                    <input type="radio" class="option-input radio" name="hoan-thanh" />
+                                    Hoàn thành
+                                </label>
+                            </div>
+                            <div style="flex: 1">
+                                <label style="font-size: 19px; display: flex; align-items: center;">
+                                    <input type="radio" class="option-input radio" name="chua-hoan-thanh" />
+                                    Chưa hoàn thành
+                                </label>
+                            </div>
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <div class="part"></div>
+                        <div class="part item-center">
+                            <input type="submit" value="Xác nhận" id="td-bao-cao-submit-btn" class="tab-content-submit-btn margin-top-30">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                </form>
+            </div>
+            <div id="qldl" class="tab-content">
+                <div class="qldl-container">
+                    <div class="tab-content-option-container">
+                        <button class="tab-content-option-btn">
+                            Tổng hợp và phân tích dân số
+                        </button>
+                    </div>
+                    <div class="tab-content-option-container">
+                        <button class="tab-content-option-btn">
+                            Danh sách dân số
+                        </button>
+                    </div>
+                    <div class="tab-content-option-container">
+                        <button class="tab-content-option-btn">
+                            Tra cứu thông tin một cá nhân
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="qldl-tra-cuu-danh-sach-dan-so" class="tab-content">
+                <div class="tab-title">TRA CỨU DANH SÁCH DÂN SỐ</div>
+                <form>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 80px;">Chọn tỉnh/thành phố*:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="button" value="-Tỉnh/Thành phố-" id="qldl-tinh-thanh-pho" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 80px;">Chọn quận/huyện:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="button" value="-Quận/Huyện-" id="qldl-quan-huyen" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 80px;">Chọn phường/xã:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="button" value="-Phường/Xã-" id="qldl-phuong-xa" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 80px;">Chọn thôn/bản/tổ dân phố:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="button" value="-Thôn/Bản/Tổ dân phố-" id="qldl-thon-ban-to-dan-pho" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <div class="part"></div>
+                        <div class="part item-center">
+                            <input type="submit" value="Tra cứu" id="qldl-tra-cuu-danh-sach-dan-so-submit-btn" class="tab-content-submit-btn">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                </form>
+            </div>
+            <div id="qldl-tra-cuu-thong-tin-mot-ca-nhan" class="tab-content">
+                <div class="tab-title">TRA CỨU THÔNG TIN MỘT CÁ NHÂN</div>
+                <form>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 250px;">Họ và tên:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập họ và tên..." id="qldl-ho-va-ten" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 250px;">Ngày sinh:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="text" placeholder="MM/DD/YYYY" id="qldl-ngay-sinh" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 250px;">Số CCCD:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập số CCCD..." id="qldl-so-cccd" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <div class="part"></div>
+                        <div class="part item-center">
+                            <input type="submit" value="Tra cứu" id="qldl-tra-cuu-thong-tin-mot-ca-nhan-submit-btn" class="tab-content-submit-btn">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="ttkcd" class="tab-content">
+                <div class="tab-title">TẠO TÀI KHOẢN CẤP DƯỚI</div>
+                <form>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 180px;">Loại tài khoản:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="button" value="Loại tài khoản cần tạo" id="ttkcd-loai-tai-khoan" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 180px;">Tên đăng nhập:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="text" placeholder="" id="ttkcd-ten-dang-nhap" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 180px;">Mật khẩu:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="password" security="hidden" placeholder="" id="ttkcd-mat-khau" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 180px;">Xác nhận mật khẩu:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="password" security="hidden" placeholder="" id="ttkcd-xac-nhan-mat-khau" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <div class="part"></div>
+                        <div class="part item-center">
+                            <input type="submit" value="Tạo tài khoản" id="ttkcd-submit-btn" class="tab-content-submit-btn">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                </form>
+            </div>  
+            </div>
+            <div id="qltk" class="tab-content">
+                <div class="qltk-container">
+                    <div class="tab-content-option-container">
+                        <button class="tab-content-option-btn">
+                            Tài khoản của tôi
+                        </button>
+                    </div>
+                    <div class="tab-content-option-container">
+                        <button class="tab-content-option-btn">
+                            Các tài khoản đã tạo
+                        </button>
+                    </div>
+                    <div class="tab-content-option-container">
+                        <button class="tab-content-option-btn">
+                            Cấp/khóa quyền khai báo với các tài khoản cấp dưới
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="qltk-tai-khoan-cua-toi" class="tab-content">
+                <div class="tab-title margin-top-30">TÀI KHOẢN CỦA TÔI</div>
+                <form>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Tên tài khoản:</p>
+                        </lable>
+                        <div class="part">
+                            <label type="text" id="qltk-tkct-ten-tai-khoan" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Loại tài khoản:</p>
+                        </lable>
+                        <div class="part">
+                            <label type="text" id="qltk-tkct-loai-tai-khoan" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Tình trạng quyền khai báo:</p>
+                        </lable>
+                        <div class="part">
+                            <label type="text" id="qltk-tkct-tinh-trang-quyen-khai-bao" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Mật khẩu:</p>
+                        </lable>
+                        <div class="part">
+                            <label type="password" id="qltk-tkct-mat-khau" class="form-control my-form-control">
+                        </div>
+                        <div class="part">
+                            <button class="tab-content-submit-btn">Đổi mật khẩu</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="qltk-cap-khoa-quyen-khai-bao-tai-khoan" class="tab-content">
+                <div class="tab-title">Cấp/khóa quyền khai báo của tài khoản</div>
+                <form>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;">Tên tài khoản cần cấp/khóa:</p>
+                        </lable>
+                        <div class="part">
+                            <input type="text" placeholder="Nhập tên tài khoản..." id="qltk-nhap-ten-tai-khoan" class="form-control my-form-control">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <lable class="input-field part bold-text">
+                            <p style="margin-left: 100px;"></p>
+                        </lable>
+                        <div class="part">
+                            <div style="flex: 1">
+                                <label style="font-size: 19px; display: flex; align-items: center;">
+                                    <input type="radio" class="option-input radio" name="hoan-thanh" />
+                                    Cấp quyền
+                                </label>
+                            </div>
+                            <div style="flex: 1">
+                                <label style="font-size: 19px; display: flex; align-items: center;">
+                                    <input type="radio" class="option-input radio" name="chua-hoan-thanh" />
+                                    Khóa quyền
+                                </label>
+                            </div>
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                    <div class="tab-content-row-80">
+                        <div class="part"></div>
+                        <div class="part item-center">
+                            <input type="submit" value="Xác nhận" id="td-bao-cao-submit-btn" class="tab-content-submit-btn margin-top-30">
+                        </div>
+                        <div class="part"></div>
+                    </div>
+                </form>
+            </div>
+            <div id="qltk-danh-sach-cac-tai-khoan-da-tao">
+                <div class="tab-title">Danh sách các tài khoản đã tạo</div>
+                <div class="find-container">
+                    <label style="margin-left: 20px;">Tìm kiếm:</label>
+                    <input type="text" style="margin-left: 20px; width: 1000px; height: 45px; font-size: 22px; border-radius:5px; border-width: 0px;">
+                    <button class="tab-content-option-btn" style="margin-left: 20px; height: 40px; width: 40px;">Tìm</button>
+                </div>
+                <div class="list-container">
+                    <div>Danh sách tài khoản</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
