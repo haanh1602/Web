@@ -1,0 +1,71 @@
+#kbcm {
+    display: none;
+    width: 1020px;
+    height: 650px;
+}
+
+  #nl {
+    display: none;
+    width: 1020px;
+    height: 750px;
+  }
+
+  #td {
+    display: none;
+    width: 1200px;
+    height: 750px;
+  }
+
+  #td-bao-cao-trinh-trang {
+    display: none;
+    width: 1200px;
+    height: 750px;
+  }
+
+  #qldl {
+    display: none;
+    width: 1200px;
+    height: 650px;
+  }
+
+  #qldl-tra-cuu-danh-sach-dan-so {
+    display: none;
+    width: 1200px;
+    height: 650px;
+  }
+
+  #qldl-tra-cuu-thong-tin-mot-ca-nhan{
+    display: none;
+    width: 1200px;
+    height: 650px;
+  }
+
+  #ttkcd {
+    display: none;
+    width: 1200px;
+    height: 650px;
+  }
+
+  #qltk {
+    display: none;
+    width: 1200px;
+    height: 600px;
+  }
+
+  #qltk-tai-khoan-cua-toi {
+    display: none;
+    width: 1020px;
+    height: 600px;
+  }
+
+  #qltk-cap-khoa-quyen-khai-bao-tai-khoan {
+    display: none;
+    width: 1200px;
+    height: 600px;
+  }
+
+  #qltk-danh-sach-cac-tai-khoan-da-tao {
+    display: none;
+    width: 1500px;
+    height: 650px;
+  }
