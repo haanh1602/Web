@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="App.css">
     <link rel="stylesheet" href="Tabs.css">
+    <script type="text/javascript" src="Script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -30,40 +31,41 @@
                 </button>
             </div>
         </div>
-    <div class="app-content-container">
-        <div class="nav-tabs">
+    </div>
+    <div id="app-content-container">
+        <div id="nav-tabs">
             <div id="khai-bao-cap-ma" class="tab1 tab-container">
-                <div class="tab">
-                    <p>KHAI BÁO & CẤP MÃ</p>
+                <div class="tab nav-tab-btn" onclick="ChangeTab('kbcm', event)">
+                    KHAI BÁO & CẤP MÃ
                 </div>
             </div>
             <div id="nhap-lieu" class="tab2 tab-container">
-                <div class="tab">
-                    <p>NHẬP LIỆU</p>
+                <div class="tab nav-tab-btn" onclick="ChangeTab('nl', event)">
+                    NHẬP LIỆU
                 </div>
             </div>
             <div id="tien-do" class="tab3 tab-container">
-                <div class="tab">
-                    <p>TIẾN ĐỘ</p>
+                <div class="tab nav-tab-btn" onclick="ChangeTab('td', event)">
+                    TIẾN ĐỘ
                 </div>
             </div>
             <div id="quan-ly-du-lieu" class="tab4 tab-container">
-                <div class="tab">
-                    <p>QUẢN LÝ DỮ LIỆU</p>
+                <div class="tab nav-tab-btn" onclick="ChangeTab('qldl', event)">
+                    QUẢN LÝ DỮ LIỆU
                 </div>
             </div>
             <div id="tao-tai-khoan-cap-duoi" class="tab5 tab-container">
-                <div class="tab">
-                    <p>TẠO TÀI KHOẢN CẤP DƯỚI</p>
+                <div class="tab nav-tab-btn" onclick="ChangeTab('ttkcd', event)">
+                   TẠO TÀI KHOẢN CẤP DƯỚI
                 </div>
             </div>
             <div id="quan-ly-tai-khoan" class="tab6 tab-container">
-                <div class="tab">
-                    <p>QUẢN LÝ TÀI KHOẢN</p>
+                <div class="tab nav-tab-btn" onclick="ChangeTab('qltk', event)">
+                    QUẢN LÝ TÀI KHOẢN
                 </div>
             </div>
         </div>
-        <div class="tab-content-container">
+        <div id="tab-content-container">
             <div id="kbcm" class="tab-content">
                 <div class="tab-title" style="margin-top:30px;">KHAI BÁO VÀ CẤP MÃ</div>
                 <form>
@@ -188,12 +190,12 @@
             <div id="td" class="tab-content">
                 <div class="td-container">
                     <div class="tab-content-option-container">
-                        <button class="tab-content-option-btn">
+                        <button class="tab-content-option-btn" onclick="ChangeTab('td', event)">
                             Xem tiến độ
                         </button>
                     </div>
                     <div class="tab-content-option-container">
-                        <button class="tab-content-option-btn">
+                        <button class="tab-content-option-btn" onclick="ChangeTab('td-bao-cao-trinh-trang', event)">
                             Báo cáo tình hình điều tra dân số
                         </button>
                     </div>
@@ -262,17 +264,17 @@
             <div id="qldl" class="tab-content">
                 <div class="qldl-container">
                     <div class="tab-content-option-container">
-                        <button class="tab-content-option-btn">
+                        <button class="tab-content-option-btn" onclick="ChangeTab('qldl', event)">
                             Tổng hợp và phân tích dân số
                         </button>
                     </div>
                     <div class="tab-content-option-container">
-                        <button class="tab-content-option-btn">
+                        <button class="tab-content-option-btn" onclick="ChangeTab('qldl-tra-cuu-danh-sach-dan-so', event)">
                             Danh sách dân số
                         </button>
                     </div>
                     <div class="tab-content-option-container">
-                        <button class="tab-content-option-btn">
+                        <button class="tab-content-option-btn" onclick="ChangeTab('qldl-tra-cuu-thong-tin-mot-ca-nhan', event)">
                             Tra cứu thông tin một cá nhân
                         </button>
                     </div>
@@ -365,7 +367,6 @@
                     </div>
                 </form>
             </div>
-
             <div id="ttkcd" class="tab-content">
                 <div class="tab-title">TẠO TÀI KHOẢN CẤP DƯỚI</div>
                 <form>
@@ -414,21 +415,20 @@
                     </div>
                 </form>
             </div>  
-            </div>
             <div id="qltk" class="tab-content">
                 <div class="qltk-container">
                     <div class="tab-content-option-container">
-                        <button class="tab-content-option-btn">
+                        <button class="tab-content-option-btn" onclick="ChangeTab('qltk-tai-khoan-cua-toi', event)">
                             Tài khoản của tôi
                         </button>
                     </div>
                     <div class="tab-content-option-container">
-                        <button class="tab-content-option-btn">
+                        <button class="tab-content-option-btn" onclick="ChangeTab('qltk-danh-sach-cac-tai-khoan-da-tao', event)">
                             Các tài khoản đã tạo
                         </button>
                     </div>
                     <div class="tab-content-option-container">
-                        <button class="tab-content-option-btn">
+                        <button class="tab-content-option-btn" onclick="ChangeTab('qltk-cap-khoa-quyen-khai-bao-tai-khoan', event)">
                             Cấp/khóa quyền khai báo với các tài khoản cấp dưới
                         </button>
                     </div>
@@ -512,13 +512,13 @@
                     <div class="tab-content-row-80">
                         <div class="part"></div>
                         <div class="part item-center">
-                            <input type="submit" value="Xác nhận" id="td-bao-cao-submit-btn" class="tab-content-submit-btn margin-top-30">
+                            <input type="submit" value="Xác nhận" id="qltk-cap-khoa-quyen-khai-bao-tai-khoan-submit-btn" class="tab-content-submit-btn margin-top-30">
                         </div>
                         <div class="part"></div>
                     </div>
                 </form>
             </div>
-            <div id="qltk-danh-sach-cac-tai-khoan-da-tao">
+            <div id="qltk-danh-sach-cac-tai-khoan-da-tao" class="tab-content">
                 <div class="tab-title">Danh sách các tài khoản đã tạo</div>
                 <div class="find-container">
                     <label style="margin-left: 20px;">Tìm kiếm:</label>

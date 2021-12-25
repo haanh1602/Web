@@ -277,14 +277,22 @@
     margin-left: 5px;
   }
 
-  .app-content-container {
-    margin-top: 125px;
+  #app-content-container {
+    margin-top: 25px;
   }
 
-  .nav-tabs {
+  #nav-tabs {
     display: flex;
     flex-direction: row;
     height: 120px;
+  }
+
+  .nav-tab-active {
+    background-color: #DDDDDD;
+  }
+
+  .nav-tab-btn-active {
+    background-color:#0d534c;
   }
 
   .tab-container {
@@ -321,7 +329,7 @@
     background-color: #2d0da3;
   }
 
-  .tab-content-container {
+  #tab-content-container {
     background-color: #DDDDDD;
     width: 100%;
     height: auto;
